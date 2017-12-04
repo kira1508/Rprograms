@@ -1,6 +1,6 @@
 library(datasets)
 library(cluster)
-library(factoextra)
+library(factoextra) #install.packages("factoextra")
 lindata <- iris
 lindata$Species<-NULL 
 d<- scale(dist(lindata,method = "euclidian"))
