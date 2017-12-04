@@ -1,7 +1,8 @@
 
-library(rpart)
+library(rpart) #install.packages("rpart")
 library(datasets)
-library(e1071)
+library(e1071)	#install.packages("e1071")
+library(rpart.plot) #install.packages("rpart.plot")
 str(iris)
 ind <- sample(2, nrow(iris),replace = TRUE, prob = c(0.5,0.5))
 trainData <- iris[ind ==1,]
